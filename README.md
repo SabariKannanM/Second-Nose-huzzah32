@@ -15,7 +15,7 @@ To build a Smart-bin that tracks the air quality in it and waste level, and noti
 ## Optional features:
 Estimating the air quality beforehand with the knowledge of previous ambient temperature, pressure and air quality inside the bin using the environmental sensor BME688.
 
-## WORKFLOW:
+## Workflow:
 * STEP 1: Research previous projects and study the datasheet of the components.
 * STEP 2: Establish an communication between the BME688 sensor and the Adafruit Huzzah32.
 * STEP 3: Establish an communication between the OLED display and the Adafruit Huzzah32.
@@ -25,7 +25,7 @@ Estimating the air quality beforehand with the knowledge of previous ambient tem
 * STEP 7: Create a mobile app to view the bin status.
 * STEP 8: Build the final prototype
 
-## TIME PLAN:
+## Time plan:
 * WEEK 21: Research
 * WEEK 22: Get data from BME688 sensor, start developing mobile app
 * WEEK 23: Display data on the OLED display, work on the mobile app
