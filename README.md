@@ -5,7 +5,7 @@ The undisposed waste in our homes starts to decompose after a few days and relea
 When these gases are inhaled by humans, it causes headache, mood swing, breathing problems, lung disease, etc. Since people with anosmia have no smell sense, they are in high risk to experiencing the above said health issues.
 
 ## Solution:
-To build a Smart-bin that tracks the air quality in it and waste level, and notifies the user via a mobile app to dispose the waste once the air gets polluted or when the bin is full. The bin is connected to the internet and the data is sent through MQTT protocol. The smart-bin consists of a BME688 gas sensor to detect the IAQ, a time of flight sensor to detect the waste level, an Adafruit Huzzah32 to get the sensor data and send the data through internet, an OLED display to display the data locally, and a battery to power the system. One of the outputs from the BME688 sensor is the IAQ which indicates the pollution level in the air. This bin generates alert when the air is moderately polluted (IAQ: 151 - 200) and heavily polluted (IAQ: 201 - 250).
+To build a Smart-bin that tracks the air quality in it and waste level, and notifies the user via a mobile app to dispose the waste once the air gets polluted or when the bin is full. The bin is connected to the internet and the data is sent through MQTT protocol. The smart-bin consists of a BME688 gas sensor to detect the IAQ, a time of flight sensor to detect the waste level, an Adafruit Huzzah32 to get the sensor data and send the data through internet, an OLED display to display the data locally, and a battery to power the system. One of the outputs from the BME688 sensor is the IAQ which indicates the pollution level in the air. This bin generates alert when the air is lightly polluted (IAQ: 101 - 150), moderately polluted (IAQ: 151 - 200) and heavily polluted (IAQ: 201 - 250).
 
 ## Mobile app features:
 * Display the Index of air quality (IAQ) in the bin.
@@ -36,10 +36,21 @@ Estimating the air quality beforehand with the knowledge of previous ambient tem
 * WEEK 28: Final prototype
 
 ## Evaluation plan:
-If the smart-bin is capable of sending the IAQ and waste level to the user's mobile phone through the internet, and gives notifications to dispose the waste when the pollution level is moderate and high, then the project would be successful.
+If the smart-bin is capable of sending the IAQ and waste level to the user's mobile phone through the internet, and gives notifications to dispose the waste when the pollution level is light to high, then the project would be successful.
 
 ## BOM:
 * [BOM link](https://octopart.com/bom-tool/PDJ5Hqcs)
+
+## Result:
+The smart bin is successfully sending the IAQ and waste level to the user's mobile phone through the internet, and gives notifications to dispose the waste when the bin is full or the air is polluted (IAQ > 100).
+* IAQ plot
+<img src="https://github.com/SabariKannanM/smart-bin-huzzah32/blob/master/result_IAQ_plot.png" title="IAQ plot">
+
+* App screen
+<img src="https://github.com/SabariKannanM/smart-bin-huzzah32/blob/master/result_app_screen.PNG" width="350" title="App screen">
+
+* App notofications
+<img src="https://github.com/SabariKannanM/smart-bin-huzzah32/blob/master/result_app_notification.PNG" width="350" title="App notofications">
 
 ## Reference:
 * [Newfangled Immaculate Trash Can Tracking System](https://www.academia.edu/download/62231884/5_IJRASET2652323-2820200229-105349-5h9jnt.pdf)
