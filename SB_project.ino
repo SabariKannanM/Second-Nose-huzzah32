@@ -1,8 +1,8 @@
 /*
-   File name    : SB_project.ino
-   Author       : Mouliha Sree S.V. and Sabari Kannan M.
+   File name    : Smart-Nose-huzzah32.ino
+   Author       : Sabari Kannan M. and Mouliha Sree S.V.
    Created on   : 04/06/2021
-   Last edit    : 22/07/2021
+   Last edit    : 30/09/2021
 
    Connections:
    Stack the Adafruit FeatherWing OLED over the Adafruit HUZZAH32
@@ -28,12 +28,13 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
-#define mqtt_server "sss"
+#define mqtt_server "xxx"
+#define mqtt_port xxx
 #define ssid "xxx"
-#define password "yyy"
+#define password "xxx"
 
-#define clientID "aaa"
-#define pubTopic "bbb"
+#define clientID "smart_bin_1"
+#define pubTopic "ubilab/smartBin"
 #define highBinLevelmm 320
 
 Adafruit_SSD1306 display = Adafruit_SSD1306(128, 32, &Wire);
@@ -138,7 +139,7 @@ void setup() {
 
   //--------------Wi-Fi-----------------------------------------------//
   setup_wifi();
-  client.setServer(mqtt_server, 1883);
+  client.setServer(mqtt_server, mqtt_port);
   //client.setCallback(callback);
   //--------------------------------------------------------------------//
 
