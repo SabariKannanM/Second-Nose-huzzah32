@@ -1,11 +1,11 @@
-# Smart-bin
+# Second-Nose
 ## Problem:
 Around 3.2 percent of Americans experience smell disorders like Anosmia and Hyposmia.
 The undisposed waste in our homes starts to decompose after a few days and releases harmful gases like methane, sulphur dioxide, nitrogen dioxide, etc.
 When these gases are inhaled by humans, it causes headache, mood swing, breathing problems, lung disease, etc. Since people with anosmia have no smell sense, they are in high risk to experiencing the above said health issues.
 
 ## Solution:
-To build a Smart-bin that tracks the air quality in it and waste level, and notifies the user via a mobile app to dispose the waste once the air gets polluted or when the bin is full. The bin is connected to the internet and the data is sent through MQTT protocol. The smart-bin consists of a BME688 gas sensor to detect the IAQ, a time of flight sensor to detect the waste level, an Adafruit Huzzah32 to get the sensor data and send the data through internet, an OLED display to display the data locally, and a battery to power the system. One of the outputs from the BME688 sensor is the IAQ which indicates the pollution level in the air. This bin generates alert when the air is lightly polluted (IAQ: 101 - 150), moderately polluted (IAQ: 151 - 200) and heavily polluted (IAQ: 201 - 250).
+To build a Second-Nose, a device that is installed in the dust bins which tracks the air quality in it and waste level, and notifies the user via a mobile app to dispose the waste once the air gets polluted or when the bin is full. The device is connected to the internet and the data is sent through MQTT protocol. The Second-Nose consists of a BME688 gas sensor to detect the IAQ, a time of flight sensor to detect the waste level, an Adafruit Huzzah32 to get the sensor data and send the data through internet, an OLED display to display the data locally, and a battery to power the system. One of the outputs from the BME688 sensor is the IAQ which indicates the pollution level in the air. This device generates alert when the air is lightly polluted (IAQ: 101 - 150), moderately polluted (IAQ: 151 - 200) and heavily polluted (IAQ: 201 - 250).
 
 ## Mobile app features:
 * Display the Index of air quality (IAQ) in the bin.
@@ -31,18 +31,18 @@ Estimating the air quality beforehand with the knowledge of previous ambient tem
 * WEEK 23: Display data on the OLED display, work on the mobile app
 * WEEK 24: Send data to the MQTT server, work on the mobile app
 * WEEK 25: Get data from the time of flight sensor, work on the mobile app
-* WEEK 26: Test the smart-bin
+* WEEK 26: Test the Second-Nose
 * WEEK 27: Final adjustments
 * WEEK 28: Final prototype
 
 ## Evaluation plan:
-If the smart-bin is capable of sending the IAQ and waste level to the user's mobile phone through the internet, and gives notifications to dispose the waste when the pollution level is light to high, then the project would be successful.
+If the Second-Nose is capable of sending the IAQ and waste level to the user's mobile phone through the internet, and gives notifications to dispose the waste when the pollution level is light to high, then the project would be successful.
 
 ## BOM:
 * [BOM link](https://octopart.com/bom-tool/PDJ5Hqcs)
 
 ## Result:
-The smart bin is successfully sending the IAQ and waste level to the user's mobile phone through the internet, and gives notifications to dispose the waste when the bin is full or the air is polluted (IAQ > 100).
+The Second-Nose is successfully sending the IAQ and waste level in the bin to the user's mobile phone through the internet, and gives notifications to dispose the waste when the bin is full or the air is polluted (IAQ > 100).
 * IAQ plot
 <img src="https://github.com/SabariKannanM/smart-bin-huzzah32/blob/master/result_IAQ_plot.png" title="IAQ plot">
 
