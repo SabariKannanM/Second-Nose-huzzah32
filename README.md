@@ -44,13 +44,13 @@ If the Second-Nose is capable of sending the IAQ and waste level to the user's m
 ## Result:
 The Second-Nose is successfully sending the IAQ and waste level in the bin to the user's mobile phone through the internet, and gives notifications to dispose the waste when the bin is full or the air is polluted (IAQ > 100).
 * IAQ plot
-<img src="https://github.com/SabariKannanM/smart-bin-huzzah32/blob/master/result_IAQ_plot.png" title="IAQ plot">
+<img src="https://github.com/ubilab-ss21/Second-Nose-huzzah32/blob/master/result_IAQ_plot.png" title="IAQ plot">
 
 * App screen
-<img src="https://github.com/SabariKannanM/smart-bin-huzzah32/blob/master/result_app_screen.PNG" width="350" title="App screen">
+<img src="https://github.com/ubilab-ss21/smart-bin-huzzah32/blob/master/result_app_screen.PNG" width="350" title="App screen">
 
 * App notofications
-<img src="https://github.com/SabariKannanM/smart-bin-huzzah32/blob/master/result_app_notification.PNG" width="350" title="App notofications">
+<img src="https://github.com/ubilab-ss21/smart-bin-huzzah32/blob/master/result_app_notification.PNG" width="350" title="App notofications">
 
 ## Reference:
 * [Newfangled Immaculate Trash Can Tracking System](https://www.academia.edu/download/62231884/5_IJRASET2652323-2820200229-105349-5h9jnt.pdf)
